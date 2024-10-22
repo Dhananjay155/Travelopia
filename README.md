@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# Flight Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive web application for managing flight details, allowing users to view flight information and navigate through flight listings.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- View detailed flight information, including flight number, airline, origin, destination, departure time, and status.
+- Responsive design that works well on mobile, tablet, and desktop devices.
+- Fetches flight data asynchronously, ensuring a smooth user experience.
+- Error handling for API fetch failures.
+- Back navigation button to return to the previous page.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Technologies Used
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: Typed superset of JavaScript for better tooling and maintainability.
+- **Vite**: A fast development environment for modern web projects.
+- **React Router**: For client-side routing.
+- **CSS**: For styling and responsive design.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/flight-management-system.git
