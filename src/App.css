@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+/* Container Styling */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flight Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #2c3e50;
+  color: white;
+}
+
+thead th {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease-in-out;
+}
+
+tbody tr:hover {
+  background-color: #508a79;
+}
+
+td {
+  padding: 12px;
+  color: #555;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Flight Status Badges */
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+.status.on-time {
+  background-color: #27ae60;
+}
+
+.status.delayed {
+  background-color: #e74c3c;
+}
+
+.status.boarding {
+  background-color: #f39c12;
+}
+
+.status.departed {
+  background-color: #2980b9;
+}
+
+/* Flight Detail Styles */
+.flight-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding : 20px ;
+  max-width: 600px;
+  margin: 250px auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.flight-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.flight-detail-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flight-detail-card p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.flight-detail-card strong {
+  color: #222;
+}
+
+/* Loading and Error States */
+.loading {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .flight-title {
+    font-size: 1.5rem;
+  }
+
+  .flight-detail-card {
+    padding: 15px;
+  }
+
+  .flight-detail-card p {
+    font-size: 0.9rem;
+  }
+}
+.go-back-button {
+  margin-top: 20px ;
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: white;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.go-back-button:hover {
+  background-color: #0056b3; 
+}
+
+@media (max-width: 768px) {
+  .go-back-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+
