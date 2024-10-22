@@ -29,4 +29,17 @@ A responsive web application for managing flight details, allowing users to view
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/flight-management-system.git
+   https://github.com/Dhananjay155/Travelopia.git
+   ```
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
+## Usage
+1. Start the development server:
+   ```bash
+   npm run dev
+   ```
+2. Open your browser and visit http://localhost:3000 to view the application.
+   
+   
