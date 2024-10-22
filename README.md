@@ -1,4 +1,4 @@
-# Flight Management System
+# Real-Time Flight Status Board 
 
 A responsive web application for managing flight details, allowing users to view flight information and navigate through flight listings.
 
