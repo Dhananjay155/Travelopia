@@ -41,7 +41,7 @@ const FlightDetail: React.FC = () => {
         <p><strong>Departure Time:</strong> {flight.departureTime}</p>
         <p><strong>Status:</strong> {flight.status}</p>
       </div>
-      <button className="go-back-button" onClick={() => navigate(-1)}>Go Back</button> {/* Go Back button */}
+      <button className="go-back-button" onClick={() => navigate(-1)}>Go Back</button> 
     </div>
   );
 };
