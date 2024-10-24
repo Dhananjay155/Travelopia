@@ -1,3 +1,4 @@
+
 import React from 'react';
 import FlightDetail from '../components/FlightDetail';
 

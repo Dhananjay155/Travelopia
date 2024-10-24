@@ -1,14 +1,20 @@
-import axios from 'axios';
+
 import { Flight } from '../types';
 
-const BASE_URL = 'https://flight-status-mock.core.travelopia.cloud/flights';
+const API_URL = 'https://flight-status-mock.core.travelopia.cloud/flights';
 
 export const getFlights = async (): Promise<Flight[]> => {
-  const response = await axios.get(BASE_URL);
-  return response.data;
+  const response = await fetch(API_URL);
+  if (!response.ok) {
+    throw new Error('Failed to fetch flights');
+  }
+  return response.json();
 };
 
-export const getFlightById = async (id: string): Promise<Flight> => {
-  const response = await axios.get(`${BASE_URL}/${id}`);
-  return response.data;
+export const getFlightById = async (id: number): Promise<Flight | null> => {
+  const response = await fetch(`${API_URL}/${id}`);
+  if (!response.ok) {
+    throw new Error('Flight not found');
+  }
+  return response.json();
 };

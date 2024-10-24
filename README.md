@@ -25,6 +25,10 @@ A responsive web application for managing flight details, allowing users to view
 - **React Router**: For client-side routing.
 - **CSS**: For styling and responsive design.
 
+## Presentation
+
+- https://youtu.be/hzJZJ5K4xAs
+
 ## Installation
 
 1. Clone the repository:
@@ -40,6 +44,6 @@ A responsive web application for managing flight details, allowing users to view
    ```bash
    npm run dev
    ```
-2. Open your browser and visit http://localhost:5173 to view the application.
+2. Open your browser and visit http://localhost:5173/ to view the application.
    
    
