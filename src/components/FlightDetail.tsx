@@ -3,6 +3,7 @@ import { getFlightById } from '../services/flightService';
 import { Flight } from '../types';
 import { useParams, useNavigate } from 'react-router-dom';
 import Navbar from './Navbar'; 
+
 const FlightDetail: React.FC = () => {
   const { id } = useParams();
   const navigate = useNavigate(); 
